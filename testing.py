@@ -1,7 +1,7 @@
 import cv2
 
 list_of=[]
-ret, images = cv2.imreadmulti("/Users/Sotiris/Desktop/neurons 2-fura380.tif")
+ret, images = cv2.imreadmulti(".tif")
 backtorgb = cv2.cvtColor(images[0], cv2.COLOR_GRAY2RGB)
 print(backtorgb.shape)
 params = cv2.SimpleBlobDetector_Params()
